@@ -1,0 +1,70 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form id="plant-edit" #f="ngForm">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            size="100"
+            max="100"
+            name="name"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="scientificName">Scientific Name</label>
+          <input
+            type="text"
+            id="scientificName"
+            class="form-control"
+            size="100"
+            max="100"
+            name="scientificName"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="family">Family</label>
+          <input
+            type="text"
+            id="family"
+            class="form-control"
+            size="100"
+            max="100"
+            name="family"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="kingdom">Kingdom</label>
+          <input
+            type="text"
+            id="kingdom"
+            class="form-control"
+            size="100"
+            max="100"
+            name="kingdom"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 btn-toolbar">
+          <button class="btn btn-success" type="submit" [disabled]="!f.valid">
+            Save
+          </button>
+          <button class="btn btn-primary" type="button">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

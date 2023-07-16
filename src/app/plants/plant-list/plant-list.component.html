@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row pad-left-right">
+      <span class="pull-left title">Plants</span>
+      <a routerLink="new" class="btn btn-success pull-right">Add Plant</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="center-panel">
+      <app-plant-item
+        *ngFor="let plantEl of plants"
+        [plant]="plantEl"
+      ></app-plant-item>
+    </div>
+  </div>
+</div>
