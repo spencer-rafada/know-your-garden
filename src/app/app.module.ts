@@ -10,6 +10,8 @@ import { PlantItemComponent } from './plants/plant-item/plant-item.component';
 import { PlantEditComponent } from './plants/plant-edit/plant-edit.component';
 import { PlantsComponent } from './plants/plants.component';
 import { DiscoverComponent } from './discover/discover.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { DiscoverComponent } from './discover/discover.component';
     PlantsComponent,
     DiscoverComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
